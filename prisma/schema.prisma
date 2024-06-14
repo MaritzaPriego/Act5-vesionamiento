@@ -29,7 +29,7 @@ model Project {
   description String? @db.VarChar(512)
   status Status @default(PENDING)
   createdAt DateTime @default(now())
-  updateAt DateTime
+  updatedAt DateTime
  
 
  
@@ -51,7 +51,7 @@ model Task {
   projectId Int
 
   createdAt DateTime @default(now())
-  updateAt DateTime
+  updateAt DateTime?
 }
 
 

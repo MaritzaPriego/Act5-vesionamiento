@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { UpdateProjectDto } from './dto/update-project.dto';
 import { Prisma } from '@prisma/client';
+import { PrismaService } from 'src/prisma.sevice';
 
 @Injectable()
 export class ProjectsService {
-  project: any;
 
-  constructor(private database: ProjectsService){
+  constructor(private database: PrismaService){
 
   }
 
